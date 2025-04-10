@@ -1,0 +1,233 @@
+1.Inicio
+
+Definir `valor_producto` 
+
+Mostrar “Ingrese el valor del producto que este interesado”
+
+pedir `valor_producto`
+
+Si `valor_producto` < 100 entonces:
+
+`descuento` =`valor_producto` * 0.02
+
+`valor_producto_final` = `valor_producto` - `descuento`
+
+Mostrar “El producto que ustd ingreso tuvo un descuento de ”, `descuento`
+
+Mostrar  “El precio final con el descuento seria de ”, `valor_producto_final`
+
+Si `valor_producto` ≥ 100 entonces:
+
+`descuento` = `valor_producto`  * 0.10
+
+`valor_producto_final` = `valor_producto` - `descuento` 
+
+Mostrar “El producto que ustd ingreso tuvo un descuento de ”, `descuento`
+
+Mostrar “El precio fional con descuento es ”, valor_ producto_final
+
+2.Fin
+
+Versión optimizada: 
+**Inicio**  
+
+Definir `valor_producto`
+
+Mostrar "Ingrese el calor del producto que este interesado ”
+
+pedir `valor_producto`
+
+  Si `valor_producto` < 100 entonces 
+
+`descuento` =  `valor_producto` * 0.02  
+
+Si no 
+
+`descuento` = `valor_producto` * 0.10 
+
+`precioFinal` = `valor_producto` - `descuento`
+
+Mostrar “El precio final con descuento es: ”,`precioFinal`
+
+**Fin**
+
+1. **Cree un pseudocódigo que le pida un tiempo en segundos al usuario y calcule si es menor o mayor a 10 minutos. Si es menor, muestre cuantos segundos faltarían para llegar a 10 minutos. Si es mayor, muestre “*Mayor*”.**
+
+*Ejemplos*:
+
+1040 → Mayor
+
+140 → 460
+
+599 → 1
+
+**Respuesta**
+
+1. Inicio 
+    
+    Definir `minutos10`  = 600
+    
+    Definir `usu_time`
+    
+    Definir `faltante`
+    
+    Mostrar “Ingrese el tiempo ”
+    
+    Pedir `usu_time` 
+    
+    **Si** `usu_time` < `minutos10` entonces:
+    
+    `faltante` = minutos10 - usu_time
+    
+    Mostrar “faltaron ”, `faltante`, “ minutos para llegar a 10 min”
+    
+    **Si** `usu_time` > `minutos10` entonces:
+    
+    Mostrar ”Mayor”
+    
+2. Fin
+
+1. **Cree un algoritmo que le pida un numero al usuario, y realice una suma de cada numero del 1 hasta ese número ingresado. Luego muestre el resultado de la suma.**
+
+3 → 6 (1 + 2 + 3)
+
+5 → 15 (1 + 2 + 3 + 4 + 5)
+
+12 → 78 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12)
+
+**Respuesta:**
+
+1. Inicio
+    
+           Definir `numero`, `suma` 
+    
+    Mostrar “Ingrese un numero”
+    
+    Pedir `numero` 
+    
+    Para `i` desde 1 hasta `numero` hacer:
+    
+    `suma` = `suma` + `i`
+    
+    Mostrar “La suma de los  numeros del 1 hasta ”,`numero`, “es de ”, `suma`
+    
+2. Fin 
+
+[](data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
+
+**Ejercicios Extra**
+
+Cree un algoritmo que le pida 2 números al usuario, los guarde en dos variables distintas (primero y segundo) y los ordene de menor a mayor en dichas variables.
+
+Ejemplos:
+
+A: 56, B: 32 → A: 32, B: 56
+
+A: 24, B: 76 → A: 24, B: 76
+
+A: 45, B: 12 → A: 12, B: 45
+
+**Respuesta:**
+
+1. Inicio
+    
+    Definir `primero, segundo, num_usu1, num_usu2`
+    
+    Mostrar "Por favor ingrese 2 valores"
+    
+    Pedir `num_usu1`
+    Pedir `num_usu2`
+    
+    **Si** `num_usu1` >`num_usu2` entonces:
+    
+    `primero` = `num_usu1`
+    `segundo` = `num_usu2`
+    
+    **Si no:**
+    
+    `primero` = `num_usu1`
+    `segundo` = `num_usu`
+    
+    Mostrar "A: ", `primero`, ", B: ", `segundo`
+    
+2. Fin
+
+```python
+num_usu1 = int(input("Por favor ingrese un valores"))
+num_usu2 = int(input("Por favor ingrese un valores"))
+if  num_usu1 > num_usu2:
+	primero= num_usu2
+	segundo = num_usu1
+else:
+	primero = num_usu1
+	segundo = num_usu2
+print("A: ", primero, "B: ",segundo)
+
+```
+
+Cree un algoritmo que le pida al usuario una velocidad en km/h y la convierta a m/s. Recuerda que 1 km == 1000m y 1 hora == 60 minutos * 60 segundos.
+
+*Ejemplos*:
+
+73 → 20.27
+
+50 → 13.88
+
+120 → 33.33
+
+**Respuesta:**
+
+1. Inicio
+    
+    Definir `velocidad_kmh`, `velocidad_ms`
+    
+    Mostrar "Por favor ingrese una velocidad en km/h"
+    Pedir `velocidad_kmh`
+    
+    `velocidad_ms` = `velocidad_kmh` * 1000 / 3600
+    
+    Mostrar "La velocidad en m/s es: ", `velocidad_ms`
+    
+2. Fin
+
+Cree un algoritmo que le pregunte al usuario por el sexo de 6 personas, ingresando 1 si es mujer o 2 si es hombre, y muestre al final el porcentaje de mujeres y hombres.
+
+*Ejemplos*:
+
+1, 1, 1, 2, 2, 2 → 50% mujeres y 50% hombres
+
+1, 1, 2, 2, 2, 2 → 33.3% mujeres y 66.6% hombres
+
+1, 1, 1, 1, 1, 2 → 84.4% mujeres y 16.6% hombres
+
+**Respuesta**:
+
+1. Inicio 
+    
+    Definir `cont_mujeres` = 0 
+    
+    definir `cont_hombres` = 0
+    
+    Para `i` desde 1 hasta 6 hacer:
+    
+    Mostrar “Ingrese el sexo de la persona ”, `i`, “(1 para mujer y 2 para hombre)”
+    
+    Pedir `sexo`
+    
+    **Si** `sexo` == 1 entonces:
+          `cont_mujeres` = `cont_mujeres` + 1
+    
+    **Si no:**
+    
+    `cont_hombres`= `cont_hombres` + 1
+    
+    `porcentaje_mujeres` = (`cont_mujeres`/6)*100
+    
+    `porcentaje_hombres` = (`cont_hombres`/6)*100
+    
+    Mostrar ”porcentaje de mujeres ”,`porcentaje_mujeres`, “%”
+    
+    Mostrar “porcentaje de hombres ”,`porcentaje_hombres`, “%”
+    
+
+2.Fin
