@@ -1,0 +1,58 @@
+1. Cree un algoritmo para ver un video en Youtube. Sea lo más especifico posible.
+    
+    **Respuesta:** 
+    
+    1. Inicio 
+    2. Si el dispositivo tiene internet
+        1. Entrar a la aplicación  
+        2. Buscar el video 
+        3. Reproducir el video 
+        
+        Si no: 
+        
+        1. Mostrar mensaje “No se puede ingresar a la aplicación debido a que no tiene acceso a internet”
+        
+        Mientras el video se reproduce:
+        
+        1. Si el usuario quiere pausar el video 
+            
+            ii. Pausar video
+            
+        
+        i. Si el usuario quiere adelantar video 
+        
+        ii .Adelantar video 
+        
+
+            3.  Fin
+
+1. Cree un algoritmo que describa su rutina diaria. Use condiciones, condiciones multiples y ciclos.
+    
+    **Respuesta:** 
+    
+    1.Inicio
+    
+    [2.](http://2.Si)Si alarma suena: 
+    
+    1.  Despertar 
+    2. Alistarme
+    3. Desayunar
+    4. Si tengo que ir al trabajo: 
+        1. trabajar
+        2. Mientras no termine de trabajar:
+            1. seguir trabajando 
+        3. Si ya termine de trabajar y llegue a la casa:
+            1. Adelantar Lyfter
+            2. Si ya complete todas las tareas pendientes:
+                1. Relajarme
+            3. Si no he terminado con las tareas:
+                1. Seguir adelantando las tareas
+    5. Si no tengo que ir a trabajar: 
+        1. Si tengo pendientes:
+            1. Completar pendientes
+        2. Si no tengo pendientes:
+        i. Salir con mis amigos o hacer un hobbie 
+            1. Relajarme 
+    6. Alistar todo para el siguiente día
+    7. Ir a dormir 
+    1. Fin
